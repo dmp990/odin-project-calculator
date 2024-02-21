@@ -8,12 +8,19 @@
     font-family: "Kode Mono", monospace;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 .calculator-container {
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 500px;
-    border: 5px solid sandybrown;
 }
 
 .display {
@@ -23,6 +30,7 @@
 .display p {
     text-align: right;
     font-size: 70px;
+    background-color: lightsalmon;
 }
 
 .button-array {
@@ -33,6 +41,8 @@
 
 .button-array button {
     width: 75px;
+    border: 1px solid black;
+    font-size: 22px;
 }
 
 .button-array button:hover {
@@ -40,6 +50,21 @@
     color: black;
 }
 
+.operator, .equal-button {
+    background-color: olivedrab;
+    color: white;
+}
+
+.ac-button, .toggle-negation-button {
+    background-color: darkkhaki;
+    color: black;
+}
+
+.number, .zero, .dot {
+    background-color: antiquewhite;
+    color: black;
+}
+
 .zero {
-    width: 150px;
+    flex: 2;
 }
