@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: aliceblue;
+    color: white;
+    font-family: "Kode Mono", monospace;
 }
 
 .calculator-container {
@@ -15,9 +18,28 @@
 
 .display {
     flex: 0.16;
-    border: 5px dashed dodgerblue;
+}
+
+.display p {
+    text-align: right;
+    font-size: 70px;
 }
 
 .button-array {
     flex: 0.84;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-array button {
+    width: 75px;
+}
+
+.button-array button:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.zero {
+    width: 150px;
 }
